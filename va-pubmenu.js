@@ -149,6 +149,8 @@ Menu.prototype.showBackdrop = function() {
 		height: 100%;
 		background-color: rgba(100, 100, 100, .3);
 		z-index: 0;
+		top: 0;
+		left: 0;
 	`;
 	backdrop.addEventListener('click', (e) => {
 		this.toggle();
