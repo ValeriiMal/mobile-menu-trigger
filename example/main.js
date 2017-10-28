@@ -1,5 +1,3 @@
-import { Menu } from '../src/menu.class';
-
 window.addEventListener('DOMContentLoaded', () => {
 	run();
 });
@@ -23,6 +21,6 @@ function run() {
 			title: 'Close account',
 		},
 	];
-	const menu = new Menu(menuContainer, menuItems); 
+	const menu = new VaPubMenu(menuContainer, menuItems); 
 	menu.render();
 }

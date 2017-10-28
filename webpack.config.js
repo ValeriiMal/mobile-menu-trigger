@@ -1,9 +1,13 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-	entry: './src/menu.class.js',
+	entry: './index.js',
 	output: {
-		path: path.resolve(__dirname, './dist'),
-		filename: 'index.js',
+		path: path.resolve(__dirname, './'),
+		filename: 'va-pubmenu.js',
 	},
+	plugins: [
+		// new UglifyJsPlugin(),
+	],
 };

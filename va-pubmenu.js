@@ -69,13 +69,25 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["Menu"] = Menu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_button_class__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu_item_class__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_menu_class__ = __webpack_require__(1);
+
+
+(function(window, Menu) {
+	window.VaPubMenu = Menu;
+})(window, __WEBPACK_IMPORTED_MODULE_0__src_menu_class__["a" /* Menu */]);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = Menu;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_button_class__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu_item_class__ = __webpack_require__(3);
 
 
 
-function Menu(container, items) {
+function Menu(container, items, options) {
 
 	if (!isValidContainer(container)) {
 		console.warn('menu can only be created within HTML element container');
@@ -177,7 +189,7 @@ Menu.prototype.render = function() {
 };
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -206,7 +218,7 @@ class MainButton {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

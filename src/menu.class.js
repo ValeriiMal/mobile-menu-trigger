@@ -1,7 +1,7 @@
 import { MainButton } from './menu-button.class';
 import { MenuItem } from './menu-item.class';
 
-export function Menu(container, items) {
+export function Menu(container, items, options) {
 
 	if (!isValidContainer(container)) {
 		console.warn('menu can only be created within HTML element container');
