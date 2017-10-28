@@ -1,30 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-	run();
-});
+import { MainButton } from './menu-button.class';
+import { MenuItem } from './menu-item.class';
 
-function run() {
-	const menuContainer = document.querySelector('.menu-container');
-	const menuItems = [
-		{
-			title: 'Account',
-		},
-		{
-			title: 'Transaction history',
-		},
-		{
-			title: 'Gift notifications',
-		},
-		{
-			title: 'Settings',
-		},
-		{ title: 'Close account', },
-	];
-	const options = {};
-	const menu = new Menu(menuContainer, menuItems, options); 
-	menu.render();
-}
-
-function Menu(container, items, options) {
+export function Menu(container, items) {
 
 	if (!isValidContainer(container)) {
 		console.warn('menu can only be created within HTML element container');
